@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{{#if pageTitle}}{{pageTitle}}{{else}} Base Title{{/if}}</title>
+        <title>{{#if pageTitle}}{{pageTitle}}{{else}} GlowAlchemy{{/if}}</title>
         <link rel="stylesheet" href="/styles/styles.css" />
     </head>
 
@@ -12,11 +12,11 @@
             <nav>
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Search</a></li>
+                    <li><a href="/products">Products</a></li>
+                    <li><a href="/search">Search</a></li>
 
                    {{#if isAuthenticated}} 
-                    <li><a href="#">Add Product</a></li>
+                    <li><a href="/products/create">Add Product</a></li>
                     <li><a href="/users/logout">Logout</a></li>
                     {{else}}
 
