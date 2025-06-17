@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 async function initDatabase() {
     const dbUrl = `mongodb://localhost:27017`
-const dbName = 'test_db'
+const dbName = 'glow_alchemy'
 
 try {
     await mongoose.connect(dbUrl,{dbName})
