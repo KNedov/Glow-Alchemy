@@ -2,9 +2,10 @@ import { Schema, model } from "mongoose";
 import bcrypt from 'bcrypt'
 
 const userSchema = new Schema({
+    // TODO
     name: {
         type: String,
-        required: [true,'Username is required!']
+        required: [true,'Name is required!']
     },
     email: {
         type: String,
