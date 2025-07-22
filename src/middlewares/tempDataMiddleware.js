@@ -1,5 +1,5 @@
 export function tempData(req, res) {
-    res.temRedirect = function (url, data) {
+    res.tempRedirect = function (url, data) {
         req.session.data = data;
 
         return res.redirect(url);
